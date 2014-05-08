@@ -1,0 +1,86 @@
+@standard-transition-time: 0.9s;
+
+/* Modale Animationen */
+
+
+.th-scale-in .th-md-content {
+  .transformScale(0.6);
+  opacity: 0;
+  .transitionAll(@standard-transition-time);
+}
+
+.th-show.th-scale-in .th-md-content {
+  .transformScale(1);
+  opacity: 1;
+}
+
+.th-slide-in .th-md-content {
+  .transform(translateX(20%));
+  opacity: 0;
+  .transitionAll(@standard-transition-time, cubic-bezier(0.25, 0.5, 0.5, 0.9));
+}
+
+.th-show.th-slide-in .th-md-content {
+  .transform(translateX(0));
+  opacity: 1;
+}
+
+.th-newspaper .th-md-content {
+  .transform(scale(0) rotate(720deg));
+  opacity: 0;
+  .transitionAll(@standard-transition-time);
+}
+
+.th-show.th-newspaper .th-md-content {
+  .transform(scale(1) rotate(0deg));
+  opacity: 1;
+}
+
+.th-modal.th-flip {
+  .perspective(1300px)
+}
+
+.th-flip .th-md-content {
+  .transform(rotateY(70deg));
+  opacity: 0;
+  .transitionAll(@standard-transition-time);
+  .preserve3D;
+}
+
+.th-show.th-flip .th-md-content {
+  .transform(rotateY(0deg));
+  opacity: 1;
+}
+
+.th-modal.th-rotate {
+  .perspective(1300px)
+}
+
+.th-rotate .th-md-content {
+  .transform(translateY(100%) rotateX(90deg));
+  opacity: 0;
+  .transitionAll(@standard-transition-time);
+  .preserve3D;
+}
+
+.th-show.th-rotate .th-md-content {
+  .transform(translateY(0) rotateX(0));
+  opacity: 1;
+}
+
+.th-modal.th-fly-in {
+  .perspective(1300px)
+}
+
+.th-fly-in .th-md-content {
+  .transform(translate3d(500%, -500%,-8000px));
+  opacity: 0;
+  .transitionAll(@standard-transition-time);
+  .preserve3D;
+}
+
+.th-show.th-fly-in .th-md-content {
+  .transform(translate3d(0, 0, 0));
+  opacity: 1;
+}
+
