@@ -34,7 +34,7 @@
 
 .th-md-content {
   color: #fff;
-  background: #e74c3c;
+  background: @modal-color ;
   position: relative;
   border-radius: 3px;
   margin: 0 auto;
@@ -43,7 +43,7 @@
     margin: 0;
     padding: 0.4em;
     text-align: center;
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: 300;
     opacity: 0.8;
     background: rgba(0,0,0,0.1);
@@ -59,8 +59,13 @@
 }
 
 .th-close {
-    margin: 30px auto 0px auto;
     .button;
+    height: 60px;
+    padding-top: 9px;
+    margin: 40px auto 0px auto;
+    background: darken(@modal-color, 10%);
+    box-shadow: darken(@modal-color, 30%) 0px 6px;
+
 }
 
 .th-show ~ #th-overlay, .th-modal.th-show {

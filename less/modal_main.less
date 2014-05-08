@@ -1,5 +1,70 @@
+
+body {
+  margin: 0;
+}
+
+.th-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .start-button {
   .button;
   background-color: @nice-blue;
 }
 
+.th-container > section {
+  float: left;
+  width: 33.33%;
+  height: 50%;
+
+  &:first-child {
+    background: @modal_color1;
+    > button {
+      background: saturate(darken(@modal_color1, 10%),20%);
+      box-shadow: saturate(darken(@modal_color1, 30%),60%) 0px 6px;
+    }
+  }
+
+/* Hier könnte man auch noch eine loop einbauen */
+  &:nth-child(2) {
+    background: @modal_color2;
+    > button {
+      background: saturate(darken(@modal_color2, 10%),20%);
+      box-shadow: saturate(darken(@modal_color2, 30%),60%) 0px 6px;
+    }
+  }
+
+  &:nth-child(3) {
+    background: @modal_color3;
+    > button {
+      background: saturate(darken(@modal_color3, 10%),20%);
+      box-shadow: saturate(darken(@modal_color3, 30%),60%) 0px 6px;
+    }
+  }
+
+  &:nth-child(4) {
+    background: @modal_color4;
+    > button {
+      background: saturate(darken(@modal_color4, 10%),20%);
+      box-shadow: saturate(darken(@modal_color4, 30%),60%) 0px 6px;
+    }
+  }
+
+  &:nth-child(5) {
+    background: @modal_color5;
+    > button {
+      background: saturate(darken(@modal_color5, 10%),20%);
+      box-shadow: saturate(darken(@modal_color5, 30%),60%) 0px 6px;
+    }
+  }
+
+  &:nth-child(6) {
+    background: @modal_color6;
+    > button {
+      background: saturate(darken(@modal_color6, 10%),20%);
+      box-shadow: saturate(darken(@modal_color6, 30%),60%) 0px 6px;
+    }
+  }
+
+}
