@@ -8,14 +8,18 @@ $(function() {
   var click_event = (is_touch_device()) ? "touchstart" : "click";  
 
   var openModalHandler = function() {
-    $("#th-modal").addClass("th-show");
+    var animation = "";
+    if (event.target) {animation=event.target.getAttribute("data-animation");};
+    // Die folgende Zeiel ist für Firefox
+    if (event.srcElement) {animation=event.srcElement.getAttribute("data-animation");};
+    $(".th-modal."+animation).addClass("th-show");
   }
 
   var closeModalHandler = function() {
-    $("#th-modal").removeClass("th-show");
+    $(".th-modal").removeClass("th-show");
   }
 
-  $("#th-start-modal-1").on(click_event, openModalHandler);
+  $(".start-button").on(click_event, openModalHandler);
   $(".th-close").on(click_event, closeModalHandler);
   $("#th-overlay").on(click_event, closeModalHandler);
 

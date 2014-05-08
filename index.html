@@ -20,32 +20,99 @@
     
   </head>
 
-
   <body>
 
-  <body>
-
-    <div id="th-modal" class="th-modal th-scale-in" >
+ <div class="th-modal th-scale-in" >
       <div class="th-md-content">
-        <h3>Modales Fenster</h3>
+        <h3>Modales Fenster "Scale in"</h3>
         <div>
           <p>Wie hat dir die Animation gefallen?</p>
-          <p>Klicke aus "Schliessen" und die Animation geht rückwärts.</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
+          <button class="th-close">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="th-modal th-slide-in" >
+      <div class="th-md-content">
+        <h3>Modales Fenster "Slide in"</h3>
+        <div>
+          <p>Wie hat dir die Animation gefallen?</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
+          <button class="th-close">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="th-modal th-newspaper" >
+      <div class="th-md-content">
+        <h3>Modales Fenster "Newspaper"</h3>
+        <div>
+          <p>Wie hat dir die Animation gefallen?</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
+          <button class="th-close">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="th-modal th-flip" >
+      <div class="th-md-content">
+        <h3>Modales Fenster "Flip (3D)"</h3>
+        <div>
+          <p>Wie hat dir die Animation gefallen?</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
+          <button class="th-close">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="th-modal th-rotate" >
+      <div class="th-md-content">
+        <h3>Modales Fenster "Rotate (3D)"</h3>
+        <div>
+          <p>Wie hat dir die Animation gefallen?</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
+          <button class="th-close">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="th-modal th-fly-in" >
+      <div class="th-md-content">
+        <h3>Modales Fenster "Fly in"</h3>
+        <div>
+          <p>Wie hat dir die Animation gefallen?</p>
+          <p>Klicke auf "Schliessen" und die Animation geht rückwärts.</p>
           <button class="th-close">Schliessen</button>
         </div>
       </div>
     </div>
 
     <div class="th-container">
-      <button id="th-start-modal-1" class="start-button" data-target="tbd">
-        <span>open Modal</span>
+      <button class="start-button" data-animation="th-scale-in">
+       Scale in
+      </button>
+      <button class="start-button" data-animation="th-slide-in">
+       Slide in
+      </button>
+      <button class="start-button" data-animation="th-newspaper">
+       Newspaper
+      </button>
+      <button class="start-button" data-animation="th-flip">
+       Flip 3D
+      </button>
+      <button class="start-button" data-animation="th-rotate">
+       Rotate 3D
+      </button>
+      <button class="start-button" data-animation="th-fly-in">
+       Fly in
       </button>
     </div>
+
 
     <div id="th-overlay"></div>
 
 
-    
   <!-- intitial nicht benötigtes Javascript hier statt im header plaziert, um das
         Laden der Seite zu beschleunigen -->
 
